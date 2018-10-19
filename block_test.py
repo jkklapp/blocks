@@ -1,5 +1,6 @@
 import unittest
-from bc import Block
+from block import Block
+
 
 class TestBlock(unittest.TestCase):
     def setUp(self):
