@@ -9,6 +9,12 @@ def calc_hash(index, timestamp, data, previous_hash):
     return h
 
 
+def calc_hash_for_two_hashes(a, b):
+    """Implements the hahs function for the blocks."""
+    h = hashlib.sha256(a + b).hexdigest()
+    return h
+
+
 def calc_hash_with_pow(index, data, previous_hash, difficulty="00"):
     found = False
     while found is False:

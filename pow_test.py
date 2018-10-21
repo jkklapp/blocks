@@ -3,6 +3,7 @@ from utils import calc_hash_with_pow
 
 
 class TestCalculateHashWithPOW(unittest.TestCase):
+    """Test POW hash calc."""
     def setUp(self):
         self.h = calc_hash_with_pow(0, "test", "0", "0")
 
